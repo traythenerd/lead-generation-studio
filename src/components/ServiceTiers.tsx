@@ -11,6 +11,8 @@ const ServiceTiers = () => {
         "Basic ICP filtering",
         "CSV/Excel delivery",
         "Email support",
+        " ",
+        " ",
       ],
       highlighted: false,
     },
@@ -40,7 +42,7 @@ const ServiceTiers = () => {
     },
     {
       name: "Custom Bundle",
-      subtitle: "For ongoing/monthly datasets",
+      subtitle: "For ongoing datasets",
       features: [
         "Fully tailored quote",
         "Ongoing data delivery",
