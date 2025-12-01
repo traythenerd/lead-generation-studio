@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Users, Mail, Target } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="min-h-screen gradient-hero pt-32 pb-20 flex items-center">
+  return <section className="min-h-screen gradient-hero pt-32 pb-20 flex items-center">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
@@ -17,9 +15,7 @@ const HeroSection = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
                 Hi, I'm <span className="text-gradient">Oliver</span>
                 <br />
-                <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">
-                  Let's talk work.
-                </span>
+                <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">Let's Talk Work.</span>
               </h1>
             </div>
 
@@ -32,22 +28,13 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button
-                asChild
-                size="lg"
-                className="gradient-accent text-primary-foreground rounded-xl px-8 py-6 text-base font-semibold shadow-soft hover:shadow-hover transition-all duration-300 group"
-              >
+              <Button asChild size="lg" className="gradient-accent text-primary-foreground rounded-xl px-8 py-6 text-base font-semibold shadow-soft hover:shadow-hover transition-all duration-300 group">
                 <a href="#contact">
                   Request a Quote
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="rounded-xl px-8 py-6 text-base font-semibold border-2 border-border hover:border-primary hover:text-primary transition-all duration-300"
-              >
+              <Button asChild variant="outline" size="lg" className="rounded-xl px-8 py-6 text-base font-semibold border-2 border-border hover:border-primary hover:text-primary transition-all duration-300">
                 <a href="#tiers">View Service Tiers</a>
               </Button>
             </div>
@@ -142,8 +129,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
