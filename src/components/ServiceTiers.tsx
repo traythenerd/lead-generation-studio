@@ -11,7 +11,7 @@ const ServiceTiers = () => {
         "Basic ICP filtering",
         "CSV/Excel delivery",
          <>
-      Email support<br/><br/><br/><br/>
+      Email support<br/><br/><br/><br/><br/>
     </>,
       ],
       highlighted: false,
