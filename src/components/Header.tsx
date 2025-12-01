@@ -31,9 +31,9 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="#" className="flex items-center gap-2 text-4xl">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">⌕</span>
+              <span className="text-primary-foreground font-bold text-lg">O</span>
             </div>
             <span className="font-semibold text-foreground text-lg hidden sm:block">
               Oliver
