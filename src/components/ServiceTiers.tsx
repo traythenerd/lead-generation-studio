@@ -10,7 +10,9 @@ const ServiceTiers = () => {
         "Verified contact details",
         "Basic ICP filtering",
         "CSV/Excel delivery",
-        "Email support <br><br>",
+         <>
+      Email support<br/><br/>
+    </>,
       ],
       highlighted: false,
     },
