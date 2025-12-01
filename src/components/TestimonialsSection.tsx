@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "Perfect for our cold outreach campaigns. High accuracy and great communication. Oliver delivered exactly what we needed.",
+      quote: "Perfect for our cold outreach campaigns. High accuracy and great communication. Delivered exactly what we needed.",
       author: "Marketing Director",
       company: "SaaS Agency",
     },
