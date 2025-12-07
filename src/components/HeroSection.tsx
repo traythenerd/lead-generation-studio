@@ -12,12 +12,12 @@ const HeroSection = () => {
               B2B Lead Generation Specialist
             </div>
 
-            <div className="flex items-center gap-6 sm:gap-8">
+            <div className="flex items-center gap-6 sm:gap-[10px]">
               <div className="space-y-4 flex-1">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
-                  Hi, I'm <span className="text-gradient">Tray</span>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">Hi, I'm Tray
+Let's Talk Work.<span className="text-gradient"></span>
                   <br />
-                  <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">Let's Talk Work.</span>
+                  <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">Let's Work.</span>
                 </h1>
               </div>
               {/* Profile Photo */}
