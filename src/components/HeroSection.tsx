@@ -13,7 +13,7 @@ const HeroSection = () => {
 
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
-                Hi, I'm <span className="text-gradient">Oliver</span>
+                Hi, I'm <span className="text-gradient">Tray</span>
                 <br />
                 <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">Let's Talk Work.</span>
               </h1>
@@ -92,7 +92,7 @@ const HeroSection = () => {
                         <BarChart3 className="w-5 h-5 text-purple-600" />
                       </div>
                       <div>
-                        <p className="text-2xl font-bold text-foreground">24h</p>
+                        <p className="text-2xl font-bold text-foreground">01 Week</p>
                         <p className="text-xs text-muted-foreground">Delivery</p>
                       </div>
                     </div>
