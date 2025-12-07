@@ -5,27 +5,49 @@ import { Textarea } from "@/components/ui/textarea";
 import { Send, Upload } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 const ContactSection = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     business: "",
     requirements: ""
   });
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Quote Request Sent!",
-      description: "Thank you for reaching out. I'll get back to you within 24 hours."
-    });
-    setFormData({
-      name: "",
-      email: "",
-      business: "",
-      requirements: ""
-    });
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formDataObj = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formDataObj as any).toString(),
+      });
+
+      toast({
+        title: "Quote Request Sent!",
+        description: "Thank you for reaching out. I'll get back to you within 24 hours."
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        business: "",
+        requirements: ""
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -48,7 +70,20 @@ const ContactSection = () => {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="neumorphic p-8 sm:p-10 rounded-2xl animate-fade-up delay-200">
+          <form 
+            name="quote-request" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit} 
+            className="neumorphic p-8 sm:p-10 rounded-2xl animate-fade-up delay-200"
+          >
+            <input type="hidden" name="form-name" value="quote-request" />
+            <p className="hidden">
+              <label>
+                Don't fill this out: <input name="bot-field" />
+              </label>
+            </p>
             <div className="grid sm:grid-cols-2 gap-6 mb-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium text-foreground">
@@ -80,8 +115,13 @@ const ContactSection = () => {
 
             
 
-            <Button type="submit" size="lg" className="w-full gradient-accent text-primary-foreground rounded-xl py-6 text-base font-semibold shadow-soft hover:shadow-hover transition-all duration-300 group">
-              Request a Quote
+            <Button 
+              type="submit" 
+              size="lg" 
+              disabled={isSubmitting}
+              className="w-full gradient-accent text-primary-foreground rounded-xl py-6 text-base font-semibold shadow-soft hover:shadow-hover transition-all duration-300 group"
+            >
+              {isSubmitting ? "Sending..." : "Request a Quote"}
               <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </form>
