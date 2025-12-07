@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-2xl">⌕</span>
             </div>
-            <span className="font-semibold text-foreground">Oliver Bennet aka. The Researcher </span>
+            <span className="font-semibold text-foreground">Tray Bennet aka. The Nerd</span>
           </div>
           
           

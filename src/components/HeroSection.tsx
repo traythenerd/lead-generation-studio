@@ -92,7 +92,7 @@ const HeroSection = () => {
                         <BarChart3 className="w-5 h-5 text-purple-600" />
                       </div>
                       <div>
-                        <p className="text-2xl font-bold text-foreground">01 Week</p>
+                        <p className="text-2xl font-bold text-foreground">24 Hour</p>
                         <p className="text-xs text-muted-foreground">Delivery</p>
                       </div>
                     </div>
