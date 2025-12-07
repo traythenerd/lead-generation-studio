@@ -7,22 +7,23 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-up">
-            {/* Profile Photo */}
-            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shadow-soft border-4 border-background">
-              <img alt="Tray - B2B Lead Generation Specialist" className="w-full h-full object-cover object-top" src="/lovable-uploads/ee3119ce-9cdd-4b2c-8fc3-8d93f9386ad2.png" />
-            </div>
-
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               B2B Lead Generation Specialist
             </div>
 
-            <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
-                Hi, I'm <span className="text-gradient">Tray</span>
-                <br />
-                <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">Let's Talk Work.</span>
-              </h1>
+            <div className="flex items-center gap-6 sm:gap-8">
+              <div className="space-y-4 flex-1">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight tracking-tight">
+                  Hi, I'm <span className="text-gradient">Tray</span>
+                  <br />
+                  <span className="text-muted-foreground font-medium text-3xl sm:text-4xl lg:text-5xl">Let's Talk Work.</span>
+                </h1>
+              </div>
+              {/* Profile Photo */}
+              <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full overflow-hidden shadow-soft border-4 border-background flex-shrink-0">
+                <img alt="Tray - B2B Lead Generation Specialist" className="w-full h-full object-cover object-top" src="/lovable-uploads/ee3119ce-9cdd-4b2c-8fc3-8d93f9386ad2.png" />
+              </div>
             </div>
 
             <h2 className="text-xl sm:text-2xl font-semibold text-foreground leading-relaxed">
