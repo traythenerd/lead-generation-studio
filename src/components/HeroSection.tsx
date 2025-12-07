@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BarChart3, Users, Mail, Target } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.png";
-
 const HeroSection = () => {
   return <section className="min-h-screen gradient-hero pt-32 pb-20 flex items-center">
       <div className="container mx-auto">
@@ -10,11 +9,7 @@ const HeroSection = () => {
           <div className="space-y-8 animate-fade-up">
             {/* Profile Photo */}
             <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shadow-soft border-4 border-background">
-              <img 
-                src={profilePhoto} 
-                alt="Tray - B2B Lead Generation Specialist" 
-                className="w-full h-full object-cover object-top"
-              />
+              <img alt="Tray - B2B Lead Generation Specialist" className="w-full h-full object-cover object-top" src="/lovable-uploads/ee3119ce-9cdd-4b2c-8fc3-8d93f9386ad2.png" />
             </div>
 
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
