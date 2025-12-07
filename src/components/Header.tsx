@@ -35,7 +35,7 @@ const Header = () => {
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">⌕</span>
             </div>
-            <span className="font-semibold text-foreground text-lg hidden sm:block">Tray Bennet aka. The Nerd</span>
+            <span className="font-semibold text-foreground text-lg hidden sm:block">Tray Smith aka. The Nerd</span>
           </a>
 
           {/* Desktop Navigation */}
