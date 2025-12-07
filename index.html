@@ -22,6 +22,14 @@
   </head>
 
   <body>
+    <!-- Hidden form for Netlify build-time detection -->
+    <form name="quote-request" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="business" />
+      <textarea name="requirements"></textarea>
+    </form>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
