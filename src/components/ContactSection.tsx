@@ -20,6 +20,7 @@ const ContactSection = () => {
 
     const form = e.currentTarget;
     const formDataObj = new FormData(form);
+    formDataObj.append("form-name", "quote-request");
 
     try {
       await fetch("/", {
