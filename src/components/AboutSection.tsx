@@ -1,6 +1,6 @@
 import { CheckCircle2 } from "lucide-react";
 const AboutSection = () => {
-  const highlights = ["Custom ICP (Ideal Customer Profile) targeting", "Verified email addresses & phone numbers", "LinkedIn profile URLs included", "CRM-ready CSV/Excel delivery", "Tech stack & company size filtering", "Fast turnaround (24-72 hours)"];
+  const highlights = ["Custom ICP (Ideal Customer Profile) targeting", "Verified email addresses", "LinkedIn profile URLs included", "CRM-ready CSV/Excel delivery", "Tech stack & company size filtering", "Fast turnaround (24-72 hours)"];
   return <section id="about" className="py-24 bg-secondary">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
